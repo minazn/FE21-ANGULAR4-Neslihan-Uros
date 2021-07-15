@@ -1,0 +1,66 @@
+
+h1,h2{
+    font-family: 'Indie Flower', cursive;
+}
+
+#title{
+    font-size: 50pt;
+}
+
+#logo{
+    width: 30%;
+}
+
+#hero-description{
+    width: 50%;
+    margin-right: 15%;
+
+
+    #hero-visits{
+        background-color: #265B4D;
+        color: white;
+        padding: 2em;
+        height: 450px;
+
+        h2{
+            color: #ED4E20;
+            font-weight: bold;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    #hero-destination{
+        background-color: #ED4E20;
+        color: white;
+        padding: 2em;
+        height: 450px;
+
+        h2{
+            color: #265B4D;
+            font-weight: bold;
+        }
+
+    }
+}
+
+#blog-content{
+
+
+    img{
+        max-width: 50%;
+        margin: 2em auto 2em auto;
+    }
+
+    .country-title{
+        color: #265B4D;
+        font-size: 30pt;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+
+}
