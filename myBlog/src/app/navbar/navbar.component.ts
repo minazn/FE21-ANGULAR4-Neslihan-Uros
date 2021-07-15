@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavtestService } from '../navtest.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  test : boolean = false;
+  constructor(private showImg: NavtestService) { }
 
   ngOnInit(): void {
+    this.showImg.translate.subscribe((show)=>{
+      this.test = show;
+    }
+    )
   }
 
 }

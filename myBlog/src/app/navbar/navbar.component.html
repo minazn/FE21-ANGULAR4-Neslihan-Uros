@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light mynavbar">
     <div class="container-fluid" id="navbar-content">
       <a class="navbar-brand" routerLink = "/">Home</a>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -7,6 +7,8 @@
           <a class="nav-link" href="#">Contact</a>
         </div>
       </div>
-      <img src="./../../assets/IMG/backpack-304799.svg" alt="Logo">
+      <img *ngIf="test" [class.animateLogo]="test" src="./../../assets/IMG/backpack-304799.svg" alt="Logo">
     </div>
   </nav>
+
+  <!-- <img [class.animateLogo="test"]  src="./../../assets/IMG/backpack-304799.svg" alt="Logo" id="logo">  -->

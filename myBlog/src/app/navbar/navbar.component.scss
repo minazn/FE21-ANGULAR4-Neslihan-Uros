@@ -1,6 +1,10 @@
+
 nav{
     font-family: 'Indie Flower', cursive;
     font-size: xx-large;
+    height: 100px;
+    background-color: yellow;
+    margin-bottom: 3em;
     img{
         max-width: 10%;
     }
@@ -16,3 +20,21 @@ nav{
     }
 
 }
+
+.animateLogo{
+    width: 25%;
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    animation: logo 4s;
+    // transform: translate(240%, -40%);
+    // transform: scale(0.3,0.3);
+}
+
+@keyframes logo {
+    0%   {transform: scale(0.7,0.7);
+            transform: translate(80%, -10%)}
+    25%  {transform: scale(0.6,0.6);}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
